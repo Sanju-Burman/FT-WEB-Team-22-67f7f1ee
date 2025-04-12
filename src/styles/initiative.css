@@ -6,18 +6,56 @@
   transition: background-color 0.3s ease;
 }
 
-h2 {
+/* Section Title */
+.initiatives-page h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
   text-align: center;
   color: var(--text-color);
 }
 
-p {
+/* Intro Text */
+.initiatives-page p {
   text-align: center;
   color: var(--text-secondary);
 }
 
+/* Location Input Form */
+.location-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.location-form input {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: var(--input-bg);
+  color: var(--text-color);
+  min-width: 250px;
+}
+
+.location-form button {
+  background: var(--accent-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.location-form button:hover {
+  background: var(--accent-hover);
+}
+
+/* Issue Grid */
 .issues-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -25,6 +63,7 @@ p {
   margin-top: 2rem;
 }
 
+/* Issue Card Styles */
 .issue-card {
   background: var(--card-bg);
   border-radius: 12px;
@@ -46,6 +85,15 @@ p {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
   color: var(--text-color);
+}
+
+.issue-card p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  color: var(--text-secondary);
 }
 
 .timestamp {
@@ -90,6 +138,7 @@ p {
   z-index: 999;
 }
 
+/* Issue Form */
 .issue-form {
   background: var(--card-bg);
   padding: 2rem;
@@ -112,6 +161,7 @@ p {
   color: var(--text-color);
 }
 
+/* Form Buttons */
 .form-buttons {
   display: flex;
   justify-content: space-between;
@@ -134,16 +184,7 @@ p {
   background: var(--secondary-btn);
 }
 
-.issue-card p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  color: var(--text-secondary);
-}
-
-/* Dark theme specific adjustments */
+/* Dark Theme Specific Tweaks */
 [data-theme="dark"] .issue-form-overlay {
   background: rgba(0, 0, 0, 0.7);
 }
