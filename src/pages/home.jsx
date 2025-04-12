@@ -6,6 +6,7 @@ import HowItWorks from "../components/HowItWorks";
 import Testimonials from "../components/testimonials";
 import ImpactStats from "../components/impactstats";
 
+
 const Home = () => {
   return (
     <div>
