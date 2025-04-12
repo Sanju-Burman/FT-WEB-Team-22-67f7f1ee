@@ -3,6 +3,7 @@ import { ref, get } from "firebase/database"; // Import Realtime Database method
 import { database } from '../firebase'; // Import the Realtime Database instance
 import VoteForm from '../components/VoteForm';
 import VoteResults from '../components/VoteResults';
+import "../styles/features.css"
 
 const VotingPage = () => {
     const [legislationId, setLegislationId] = useState(""); // Initialize with an empty string

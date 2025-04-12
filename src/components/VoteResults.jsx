@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { Chart } from 'chart.js/auto';
 import { ref as dbRef, get } from "firebase/database"; // Import Realtime Database methods
 import { database } from '../firebase'; // Import the Realtime Database instance
+import "../styles/VoteResults.css"
 
 const VoteResults = ({ legislationId }) => {
     const [votes, setVotes] = useState({ yes: 0, no: 0 });
