@@ -1,0 +1,91 @@
+/* src/styles/voter.css */
+.election-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .election-card h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .election-card p {
+    flex-grow: 1;
+  }
+  
+  .election-status {
+    margin-bottom: 1rem;
+  }
+  
+  .status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
+  }
+  
+  .status-active {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .status-upcoming {
+    background-color: #cce5ff;
+    color: #004085;
+  }
+  
+  .status-completed {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .status-voted {
+    background-color: #ffeeba;
+    color: #856404;
+  }
+  
+  .filter-buttons {
+    margin-bottom: 1.5rem;
+  }
+  
+  .candidate-card {
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .candidate-card:hover {
+    border-color: var(--primary-color);
+  }
+  
+  .radio-wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .radio-wrapper input[type="radio"] {
+    margin-right: 0.75rem;
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+  }
+  
+  .radio-wrapper label {
+    flex-grow: 1;
+    cursor: pointer;
+  }
+  
+  .vote-button {
+    font-size: 1.1rem;
+    padding: 0.75rem 2rem;
+  }
+  
+  .vote-button:hover:not(:disabled) {
+    transform: translateY(-2px);
+  }
+  
+  .vote-action {
+    text-align: center;
+    margin-top: 2rem;
+  }
