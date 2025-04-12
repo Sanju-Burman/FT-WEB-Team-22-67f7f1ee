@@ -8,7 +8,7 @@ import News from "./pages/news";
 import VotingPage from "./pages/Voting";
 import Profile from "./pages/profile";
 import LoginPage from "./pages/Login";
-import SignupPage from "./pages/Signup";
+import SignupPage from "./pages/signup.jsx";
 import PrivateRoute from "./components/PrivateRoute";
 import ThemeToggleButton from "./components/themetogglebutton";
 import { ThemeProvider } from "./context/ThemeContext";
