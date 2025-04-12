@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap");
+
+.hero-container {
+  background-image: url("/panchayat.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.hero-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--hero-overlay, rgba(0, 0, 0, 0.45));
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  padding: 20px;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.hero-content h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 12px var(--shadow-color);
+  color: var(--text-color);
+  background: transparent;
+}
+
+.hero-content p {
+  font-family: "Syne", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--text-secondary, #f0f0f0);
+  text-shadow: 1px 1px 6px var(--shadow-color);
+  background: transparent;
+}
+
+/* Light theme specific adjustments */
+[data-theme="light"] .hero-content h1,
+[data-theme="light"] .hero-content p {
+  background-color: #f0f0f0; /* Light gray background for h1 and p in light theme */
+}
+
+/* Dark theme specific adjustments */
+[data-theme="dark"] .hero-container::before {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .hero-content {
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: 0;
+}
