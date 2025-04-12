@@ -132,6 +132,8 @@ p {
 
 .form-buttons button[type="button"] {
   background: var(--secondary-btn);
+  background-color: #ff5a5aba;
+  color: black;
 }
 
 .issue-card p {
