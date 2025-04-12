@@ -1,0 +1,28 @@
+/* src/styles/results.css */
+.results-container {
+    margin-top: 1rem;
+  }
+  
+  .candidate-result {
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .candidate-result.winner {
+    border: 2px solid var(--success-color);
+    box-shadow: 0 0 10px rgba(46, 204, 113, 0.2);
+  }
+  
+  .vote-count {
+    font-weight: 500;
+    color: var(--primary-color);
+  }
+  
+  .winner-card {
+    background-color: #fcf8e3;
+    border: 2px solid var(--success-color);
+  }
+  
+  .winner-card h3 {
+    color: var(--success-color);
+  }

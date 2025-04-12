@@ -1,0 +1,63 @@
+/* src/styles/admin.css */
+.admin-tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .admin-tabs button {
+    border: 1px solid var(--border-color);
+  }
+  
+  .create-election h2, .manage-candidates h2, .view-results h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .candidate-card {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .candidate-card:hover {
+    border-color: var(--primary-color);
+  }
+  
+  .candidate-card.selected {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+  }
+  
+  .election-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .stat-card {
+    background-color: var(--card-color);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-card h3 {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-card .stat-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  .ml-2 {
+    margin-left: 0.5rem;
+  }
+  
+  .mr-2 {
+    margin-right: 0.5rem;
+  }
