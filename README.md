@@ -4,7 +4,7 @@
 
 A modern, responsive web application designed to facilitate community voting, logistics management, news updates, and user profiles. Built with React, Vite, Firebase Realtime Database, and Chart.js, this platform ensures seamless interaction for both voters and administrators.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/<YOUR_BADGE_ID>/deploy-status)](https://neighbourgov.netlify.app/)
+[Netlify link](https://neighbourgov.netlify.app/)
 
 ---
 
@@ -211,6 +211,17 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For questions, feedback, or collaboration opportunities, feel free to reach out:
 
+**Team member 1 (Leader)**
+- **GitHub**: [@Sanju-Burman](https://github.com/Sanju-Burman)
+- **Email**: aashusondhiya8@gmail.com
+- **LinkedIn**: [sanju-burman](https://www.linkedin.com/in/sanju-burman)
+- 
+**Team member 2**
+- **GitHub**: [@Sanju-Burman](https://github.com/Sanju-Burman)
+- **Email**: aashusondhiya8@gmail.com
+- **LinkedIn**: [sanju-burman](https://www.linkedin.com/in/sanju-burman)
+- 
+**Team member 3**
 - **GitHub**: [@Sanju-Burman](https://github.com/Sanju-Burman)
 - **Email**: aashusondhiya8@gmail.com
 - **LinkedIn**: [sanju-burman](https://www.linkedin.com/in/sanju-burman)
@@ -223,5 +234,3 @@ For questions, feedback, or collaboration opportunities, feel free to reach out:
 - Special thanks to the open-source community for their contributions and support.
 
 ---
-
-Feel free to customize this `README.md` file further to suit your project's specific needs. For example, you can replace placeholders like `<your-username>` and `<your-repo-name>` with actual values, and include screenshots or GIFs to make it more visually appealing.
