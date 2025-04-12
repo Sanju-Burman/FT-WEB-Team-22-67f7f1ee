@@ -9,8 +9,6 @@ import ImpactStats from "../components/impactstats";
 const Home = () => {
   return (
     <div>
-      <Navbar />
-
       <Hero />
       <FeatureOverview />
       <HowItWorks />

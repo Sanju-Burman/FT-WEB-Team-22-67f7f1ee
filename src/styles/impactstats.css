@@ -1,22 +1,36 @@
 .impact-section {
   background: #fff;
-  color: #000;
+  color: #333;
   padding: 4rem 2rem;
   text-align: center;
   font-family: "Lato", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="dark"] .impact-section {
+  background: var(--card-bg);
+  color: var(--text-color);
 }
 
 .impact-section h2 {
   font-size: 2.5rem;
-  margin-bottom: 0.5rem;
   font-weight: 800;
-  color: #000;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+[data-theme="dark"] .impact-section h2 {
+  color: var(--text-color);
 }
 
 .impact-section p {
   font-size: 1rem;
+  color: #555;
   margin-bottom: 3rem;
-  color: #333;
+}
+
+[data-theme="dark"] .impact-section p {
+  color: var(--text-secondary);
 }
 
 .stats-grid {
@@ -28,30 +42,36 @@
 }
 
 .stat-card {
-  background: #f9f9f9;
-  border: 2px solid #000;
+  background: #fdfdfd;
+  border: 2px solid #e0e0e0;
   border-radius: 20px;
   padding: 2rem 1.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
 }
 
 .stat-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .stat-card h3 {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #000;
+  color: #111;
 }
 
 .stat-card p {
   font-size: 1.1rem;
-  color: #555;
   font-weight: 500;
+  color: #555;
+}
+
+[data-theme="dark"] .stat-card {
+  background: var(--card-bg);
+  border-color: var(--border-color-dark);
+  box-shadow: 0 6px 12px var(--shadow-color);
 }
 
 @media (max-width: 600px) {

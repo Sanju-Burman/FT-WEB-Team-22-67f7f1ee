@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../styles/impact.css";
+import "../styles/impactstats.css";
 
 const stats = [
   { label: "Active Users", value: 15432 },
