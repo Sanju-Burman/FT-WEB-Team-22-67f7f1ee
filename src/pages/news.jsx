@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/news.css";
+import ImpactStats from "../components/impactstats";
 
 const newsEntries = [
   {
@@ -135,6 +136,8 @@ const News = () => {
           </div>
         ))}
       </div>
+      \
+      <ImpactStats />
     </section>
   );
 };
